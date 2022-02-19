@@ -1,5 +1,11 @@
 def sum(lst, n):
     # Your code here!
+    l = len(lst)
+    sum = 0
+    for i in range(l):
+        sum += lst[i]
+    if sum == n:
+        return True
     return False
 
 def test():

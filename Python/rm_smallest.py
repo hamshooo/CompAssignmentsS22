@@ -1,6 +1,9 @@
 def rm_smallest(d):
     # Your code here!
-    return 0;
+    if (len(d) > 0):
+        minKey = min(d, key=d.get)
+        del d[minKey]
+    return d
 
 def test():
     assert 'a' in rm_smallest({'a':1,'b':-10}).keys()
